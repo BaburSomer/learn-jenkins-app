@@ -11,5 +11,5 @@ RUN yum update -y && \
 # Verify
 RUN aws --version && docker --version && jq --version
 
-LABEL maintainer="you@example.com"
+LABEL maintainer="babursomer@gmail.com"
 ENTRYPOINT ["/bin/bash"]
