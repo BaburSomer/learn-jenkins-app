@@ -44,6 +44,7 @@ pipeline {
             steps {
                 sh '''
                     aws --version
+                    docker --version
                     docker build -t myjenkinsapp  .
                 '''
             }
