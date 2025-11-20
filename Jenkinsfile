@@ -66,7 +66,7 @@ pipeline {
             }
 
             steps {
-                #// stream editor -i ... editing in place(nimm the datei als input)  "s ... substitude /what to replace/what to replace with/global(all occurances)" filename
+                // stream editor -i ... editing in place(nimm the datei als input)  "s ... substitude /what to replace/what to replace with/global(all occurances)" filename
                 withCredentials([usernamePassword(credentialsId: 'my-aws', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
                     sh '''
                             aws --version
